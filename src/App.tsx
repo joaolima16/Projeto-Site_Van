@@ -15,7 +15,7 @@ function App() {
       <ScrollToTop />
       <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(200,168,75,0.1),_transparent_28%),linear-gradient(180deg,_rgba(12,45,94,0.04),_transparent_22%)]">
         <Navbar />
-        <main className="pt-20 md:pt-24">
+        <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/servicos" element={<ServicesPage />} />

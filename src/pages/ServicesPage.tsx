@@ -8,7 +8,7 @@ export function ServicesPage() {
         title="Serviços | Transporte Executivo"
         description="Conheça os formatos de atendimento: excursões em grupo, viagens fretadas e transfers executivos."
       />
-      <section className="page-shell py-16 md:py-20">
+      <section className="page-shell pb-16 pt-32 md:pb-20 md:pt-36">
         <div className="max-w-3xl">
           <span className="status-pill status-pill-light">Soluções de transporte</span>
           <h1 className="mt-6 font-serif text-5xl leading-tight text-ink md:text-6xl">Serviços desenhados para rotinas corporativas, grupos e deslocamentos especiais.</h1>

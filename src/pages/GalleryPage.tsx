@@ -8,7 +8,7 @@ export function GalleryPage() {
         title="Galeria | Transporte Executivo"
         description="Galeria institucional com estrutura pronta para fotos da van, do motorista e dos destinos atendidos."
       />
-      <section className="page-shell py-16 md:py-20">
+      <section className="page-shell pb-16 pt-32 md:pb-20 md:pt-36">
         <div className="max-w-3xl">
           <span className="status-pill status-pill-light">Galeria</span>
           <h1 className="mt-6 font-serif text-5xl leading-tight text-ink md:text-6xl">Estrutura pronta para prova social visual.</h1>

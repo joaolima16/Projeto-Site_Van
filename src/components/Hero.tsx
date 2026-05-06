@@ -7,7 +7,7 @@ const highlights = ["Van executiva climatizada", "Atendimento em todo o Brasil",
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden bg-[linear-gradient(145deg,rgba(12,45,94,1),rgba(17,53,105,0.94))] pt-28 md:pt-32">
       <div className="hero-grid absolute inset-0 opacity-60" />
       <div className="hero-orb hero-orb-left" />
       <div className="hero-orb hero-orb-right" />

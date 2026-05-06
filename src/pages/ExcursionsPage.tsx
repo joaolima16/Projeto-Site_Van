@@ -8,7 +8,7 @@ export function ExcursionsPage() {
         title="Excursões | Transporte Executivo"
         description="Página institucional de excursões com estado vazio elegante e chamada para orçamento no WhatsApp."
       />
-      <section className="page-shell py-16 md:py-20">
+      <section className="page-shell pb-16 pt-32 md:pb-20 md:pt-36">
         <div className="max-w-3xl">
           <span className="status-pill status-pill-light">Excursões em grupo</span>
           <h1 className="mt-6 font-serif text-5xl leading-tight text-ink md:text-6xl">Calendário pronto para receber novos roteiros.</h1>
