@@ -1,10 +1,5 @@
 import { useEffect } from "react";
-
-type SeoProps = {
-  title: string;
-  description: string;
-  image?: string;
-};
+import type { SeoProps } from "./types";
 
 function upsertMeta(selector: string, attributes: Record<string, string>) {
   let element = document.head.querySelector(selector) as HTMLMetaElement | null;

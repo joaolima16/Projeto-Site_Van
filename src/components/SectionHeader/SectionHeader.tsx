@@ -1,9 +1,4 @@
-type SectionHeaderProps = {
-  eyebrow: string;
-  title: string;
-  description: string;
-  align?: "left" | "center";
-};
+import type { SectionHeaderProps } from "./types";
 
 export function SectionHeader({ eyebrow, title, description, align = "left" }: SectionHeaderProps) {
   return (

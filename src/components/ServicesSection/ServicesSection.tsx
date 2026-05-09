@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/SectionHeader";
 import { SectionReveal } from "@/components/SectionReveal";
 import { services } from "@/data/services";
-
-type ServicesSectionProps = {
-  compact?: boolean;
-};
+import type { ServicesSectionProps } from "./types";
 
 export function ServicesSection({ compact = false }: ServicesSectionProps) {
   const visibleServices = compact ? services.slice(0, 3) : services;

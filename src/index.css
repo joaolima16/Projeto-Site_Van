@@ -17,6 +17,17 @@
   --shadow-card: 0 18px 40px rgba(12, 45, 94, 0.12);
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -364,4 +375,29 @@ textarea {
   .masonry-grid {
     column-count: 3;
   }
+}
+
+.travel-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.travel-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.travel-card:hover .card-img {
+  transform: scale(1.06);
+}
+
+.card-img {
+  transition: transform 0.5s ease;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-body {
+  font-family: 'DM Sans', sans-serif;
 }

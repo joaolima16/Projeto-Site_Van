@@ -1,9 +1,5 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
-
-type SectionRevealProps = {
-  children: ReactNode;
-  className?: string;
-};
+import { useEffect, useRef, useState } from "react";
+import type { SectionRevealProps } from "./types";
 
 export function SectionReveal({ children, className }: SectionRevealProps) {
   const ref = useRef<HTMLDivElement | null>(null);

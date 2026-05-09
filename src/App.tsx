@@ -1,13 +1,13 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import TravelGallery from "@/components/TravelGallery";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { ContactPage } from "@/pages/ContactPage";
 import { ExcursionsPage } from "@/pages/ExcursionsPage";
-import { GalleryPage } from "@/pages/GalleryPage";
 import { HomePage } from "@/pages/HomePage";
 import { ServicesPage } from "@/pages/ServicesPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/servicos" element={<ServicesPage />} />
             <Route path="/excursoes" element={<ExcursionsPage />} />
-            <Route path="/galeria" element={<GalleryPage />} />
+            <Route path="/galeria" element={<TravelGallery />} />
             <Route path="/contato" element={<ContactPage />} />
           </Routes>
         </main>

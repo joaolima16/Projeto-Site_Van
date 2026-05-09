@@ -2,10 +2,7 @@ import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/SectionHeader";
 import { SectionReveal } from "@/components/SectionReveal";
 import { galleryItems } from "@/data/gallery";
-
-type GallerySectionProps = {
-  preview?: boolean;
-};
+import type { GallerySectionProps } from "./types";
 
 export function GallerySection({ preview = false }: GallerySectionProps) {
   const items = preview ? galleryItems.slice(0, 4) : galleryItems;
