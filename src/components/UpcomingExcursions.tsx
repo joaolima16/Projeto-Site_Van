@@ -8,9 +8,9 @@ export function UpcomingExcursions() {
     <section className="page-shell py-18 md:py-24">
       <SectionReveal>
         <SectionHeader
-          eyebrow="Próximas excursões"
-          title="Calendário aberto para novos destinos."
-          description="Em vez de publicar pacotes genéricos, o foco está em organizar saídas com demanda real. Isso reduz ruído e melhora a experiência para cada grupo."
+          eyebrow="Ultimas viagens"
+          title="Ultimas viagens realizadas "
+          description="Viagens realizadas recentemente, mas que ainda estão fresquinhas na memória. Confira os detalhes e inspire-se para a sua próxima aventura!"
           align="center"
         />
       </SectionReveal>

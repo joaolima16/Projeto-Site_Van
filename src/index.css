@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'");
 @import "tailwindcss";
 
 @theme {
@@ -11,7 +11,7 @@
   --color-ink: oklch(0.28 0.03 255);
   --color-whatsapp: oklch(0.81 0.19 149);
   --font-sans: "DM Sans", sans-serif;
-  --font-serif: "Playfair Display", serif;
+  --font-serif: "Plus Jakarta Sans", serif;
   --font-heading: "Raleway", sans-serif;
   --shadow-elegant: 0 26px 80px rgba(7, 17, 35, 0.28);
   --shadow-card: 0 18px 40px rgba(12, 45, 94, 0.12);
@@ -313,6 +313,38 @@ textarea {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.82);
+}
+
+.last-trip-placeholder {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(12, 45, 94, 0.28)),
+    radial-gradient(circle at top left, rgba(200, 168, 75, 0.36), transparent 34%),
+    linear-gradient(145deg, rgba(12, 45, 94, 0.96), rgba(43, 78, 128, 0.92));
+}
+
+.last-trip-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 1px dashed rgba(255, 255, 255, 0.28);
+  border-radius: 1.4rem;
+}
+
+.last-trip-placeholder-tag {
+  position: relative;
+  z-index: 1;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.65rem 1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.84);
+  backdrop-filter: blur(10px);
 }
 
 .tone-slate {
