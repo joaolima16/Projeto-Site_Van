@@ -5,7 +5,7 @@ import { buildWhatsAppLink } from "@/lib/whatsapp";
 import logoVan from "@/assets/logo-van.svg";
 
 const links = [
-  { to: "/", label: "Início" },
+  { to: "/", label: "Inicio" },
   { to: "/servicos", label: "Serviços" },
   { to: "/galeria", label: "Galeria" },
   { to: "/contato", label: "Contato" },

@@ -3,7 +3,7 @@ import { contato, socialLinks } from "@/data/contact";
 
 const quickLinks = [
   { to: "/", label: "InÃ­cio" },
-  { to: "/servicos", label: "ServiÃ§os" },
+  { to: "/servicos", label: "Serviços" },
   { to: "/galeria", label: "Galeria" },
   { to: "/contato", label: "Contato" },
 ];

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { SectionHeader } from "@/components/SectionHeader";
 import { SectionReveal } from "@/components/SectionReveal";
-
+import pictureVan from '@/assets/foto-van.jpeg';
 const metrics = [
   { value: 8, suffix: "+", label: "anos de experiência com grupos e transfers" },
   { value: 120, suffix: "+", label: "viagens realizadas com planejamento dedicado" },
@@ -81,8 +81,8 @@ export function AboutSection() {
                   <div className="portrait-card">
                     <div className="portrait-head" />
                     {/* <div className="portrait-body" /> */}
-                    teste
-                    <div className="portrait-vehicle" />
+                    <img src={pictureVan} alt="Foto do motorista parceiro" className="absolute inset-0 h-full w-full object-cover object-[center_28%]portrait-body" />
+                    {/* <div className="portrait-vehicle" /> */}
                   </div>
                 </div>
               </div>
