@@ -36,35 +36,18 @@ export default function TravelGallery() {
 function GridView({ viagens, onSelect }: GridViewProps) {
   return (
     <div className="min-h-screen bg-stone-50">
-      <header className="sticky top-0 z-10 border-b border-stone-200 bg-white font-sans">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5">
-                <path d="M3 12l9-9 9 9M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9" />
-              </svg>
-            </div>
-            <span className="text-sm font-medium tracking-wide text-stone-800">Van do Borrg</span>
-          </div>
 
-          <nav className="hidden items-center gap-6 text-sm text-stone-500 md:flex">
-            <span className="border-b-2 pb-1 font-medium text-stone-800">Viagens</span>
-            <span className="cursor-pointer hover:text-stone-700">Sobre</span>
-            <span className="cursor-pointer hover:text-stone-700">Contato</span>
-          </nav>
-        </div>
-      </header>
 
       <section className="mx-auto max-w-6xl px-6 pb-10 pt-16 font-sans">
         <div className="mb-4 flex items-center gap-2">
           <div className="h-1.5 w-1.5 rounded-full bg-stone-300" />
-          <span className="text-xs font-medium uppercase tracking-widest text-stone-400">Ãšltimas viagens</span>
+          <span className="text-xs font-medium uppercase tracking-widest text-stone-400">Ultimas viagens</span>
         </div>
 
         <h1 className="mb-4 font-serif text-5xl leading-tight text-stone-800 md:text-6xl">
-          Cada saÃ­da,
+          Cada sai­da,
           <br />
-          <span className="text-[#0F6E56]">uma histÃ³ria.</span>
+          <span className="text-[#22368b]">uma história.</span>
         </h1>
 
         <p className="max-w-xl text-base leading-relaxed text-stone-500">

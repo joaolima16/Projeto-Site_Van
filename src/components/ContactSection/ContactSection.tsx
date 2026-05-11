@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { AtSign, MapPin, MessageCircle, Phone } from "lucide-react";
+import { MapPin, MessageCircle, Phone } from "lucide-react";
 import { SectionHeader } from "@/components/SectionHeader";
 import { SectionReveal } from "@/components/SectionReveal";
 import { contato, socialLinks } from "@/data/contact";
@@ -18,6 +18,25 @@ const initialState: FormState = {
   date: "",
   message: "",
 };
+
+function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37a4 4 0 1 1-4.63-3.24A4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </svg>
+  );
+}
+
+function WhatsAppIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      <path d="M20 11.5A8.5 8.5 0 0 1 7.5 19L4 20l1-3.3A8.5 8.5 0 1 1 20 11.5Z" />
+      <path d="M9.4 9.3c.2-.4.4-.4.7-.4h.6c.2 0 .4 0 .5.5l.4 1.2c.1.3.1.5-.1.7l-.4.5c-.1.2-.2.3-.1.5.3.6 1 1.5 2 2 .3.1.5.1.7-.1l.5-.6c.2-.2.4-.2.7-.1l1.2.6c.2.1.4.2.4.5v.6c0 .3-.1.5-.4.7-.3.2-.9.4-1.6.2-1.2-.4-2.6-1.3-3.8-2.6-1.1-1.2-1.9-2.5-2.2-3.7-.2-.7 0-1.3.2-1.5Z" />
+    </svg>
+  );
+}
 
 export function ContactSection() {
   const [form, setForm] = useState<FormState>(initialState);
@@ -58,11 +77,11 @@ export function ContactSection() {
 
           <div className="mt-8 space-y-4 text-sm text-ink/72">
             <a href={socialLinks.whatsapp} target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-2xl border border-primary/10 bg-white px-4 py-4 transition hover:border-primary/30">
-              <MessageCircle className="h-5 w-5 text-primary" />
+              <WhatsAppIcon className="h-5 w-5 text-primary" />
               <span>{contato.telefone}</span>
             </a>
             <a href={socialLinks.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-2xl border border-primary/10 bg-white px-4 py-4 transition hover:border-primary/30">
-              <AtSign className="h-5 w-5 text-primary" />
+              <InstagramIcon className="h-5 w-5 text-primary" />
               <span>{contato.instagram}</span>
             </a>
             <div className="flex items-center gap-3 rounded-2xl border border-primary/10 bg-white px-4 py-4">

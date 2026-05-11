@@ -19,9 +19,15 @@ export function LastImagesSection() {
         {lastTrips.map((trip, index) => (
           <SectionReveal key={trip.title} className="h-full">
             <article className="surface-card group h-full overflow-hidden transition duration-500 hover:-translate-y-2 hover:shadow-[0_28px_70px_rgba(12,45,94,0.18)]">
-              <div className="last-trip-placeholder flex min-h-72 items-end p-2 transition duration-500 group-hover:scale-[1.02]">
-                <div className="last-trip-placeholder-tag">
-                  <img src={oneImage} alt={`Imagem da viagem ${index + 1}`} className="w-full rounded-lg object-cover object-center aspect-[4/3]" />
+              <div className="last-trip-placeholder relative min-h-72 overflow-hidden transition duration-500 group-hover:scale-[1.02]">
+                <img
+                  src={oneImage}
+                  alt={`Imagem da viagem ${index + 1}`}
+                  className="absolute inset-0 h-full w-full object-cover object-[center_28%]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[rgba(12,45,94,0.42)] via-transparent to-[rgba(255,255,255,0.08)]" />
+                <div className="last-trip-placeholder-tag absolute bottom-4 left-4">
+                  Viagem 0{index + 1}
                 </div>
               </div>
 

@@ -2,26 +2,17 @@ import { useEffect, useState } from "react";
 import { Menu, MessageCircle, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
-import logoVan from '@/assets/logo-van.svg';
+import logoVan from "@/assets/logo-van.svg";
+
 const links = [
   { to: "/", label: "Início" },
   { to: "/servicos", label: "Serviços" },
-  { to: "/excursoes", label: "Excursões" },
   { to: "/galeria", label: "Galeria" },
   { to: "/contato", label: "Contato" },
 ];
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 18);
-
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     if (!open) {
@@ -46,7 +37,7 @@ export function Navbar() {
       <div className="page-shell flex items-center justify-between py-4">
         <NavLink to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <span className="flex h-11 w-11 items-center justify-center">
-              <img src={logoVan} alt="Ícone de van" className="rounded-full" />
+            <img src={logoVan} alt="Ãcone de van" className="rounded-full" />
           </span>
           <div>
             <p className="font-serif text-xl text-white">{`Transporte Executivo`}</p>

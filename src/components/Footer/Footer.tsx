@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import { contato, socialLinks } from "@/data/contact";
 
 const quickLinks = [
-  { to: "/", label: "Início" },
-  { to: "/servicos", label: "Serviços" },
-  { to: "/excursoes", label: "Excursões" },
+  { to: "/", label: "InÃ­cio" },
+  { to: "/servicos", label: "ServiÃ§os" },
   { to: "/galeria", label: "Galeria" },
   { to: "/contato", label: "Contato" },
 ];
@@ -54,7 +53,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="page-shell flex flex-col gap-3 py-5 text-xs text-white/55 md:flex-row md:items-center md:justify-between">
           <p>© 2026 {contato.nomeServico}. Todos os direitos reservados.</p>
-          <p>Atendemos todo o Brasil com foco em experiência, pontualidade e discrição.</p>
+          <p>Atendemos toda a região da Grande São Paulo com foco em experiência, pontualidade e descrição.</p>
         </div>
       </div>
     </footer>

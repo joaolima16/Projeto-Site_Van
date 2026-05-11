@@ -1,7 +1,6 @@
 import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
 import { DifferentialsSection } from "@/components/DifferentialsSection";
-import { GallerySection } from "@/components/GallerySection";
 import { Hero } from "@/components/Hero";
 import { LastImagesSection } from "@/components/LastImages/LastImagesSection";
 import { Seo } from "@/components/Seo";
@@ -20,7 +19,6 @@ export function HomePage() {
       <ServicesSection compact />
       <LastImagesSection />
       <AboutSection />
-      <GallerySection preview />
       <TestimonialsSection />
       <ContactSection />
     </>

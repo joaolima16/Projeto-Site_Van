@@ -80,7 +80,8 @@ export function AboutSection() {
                   <div className="portrait-badge">motorista parceiro</div>
                   <div className="portrait-card">
                     <div className="portrait-head" />
-                    <div className="portrait-body" />
+                    {/* <div className="portrait-body" /> */}
+                    teste
                     <div className="portrait-vehicle" />
                   </div>
                 </div>
