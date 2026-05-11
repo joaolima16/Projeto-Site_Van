@@ -40,9 +40,7 @@ export function Navbar() {
     <header
       className={[
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled
-          ? "border-b border-white/10 bg-primary/92 shadow-elegant backdrop-blur-xl"
-          : "bg-transparent",
+        "border-b border-white/10 bg-primary/92 shadow-elegant backdrop-blur-xl",
       ].join(" ")}
     >
       <div className="page-shell flex items-center justify-between py-4">
