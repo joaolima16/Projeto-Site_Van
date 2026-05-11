@@ -14,7 +14,7 @@ export function Hero() {
       <div className="page-shell relative grid gap-12 py-18 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-30">
         <SectionReveal className="space-y-8">
           <div className="space-y-6">
-            <span className="status-pill">Atendimento executivo para viagens, eventos e transfers</span>
+            <span className="status-pill">Atendimento executivo para viagens, eventos e excursões</span>
             <h1 className="max-w-3xl font-heading text-5xl leading-[1.02] text-white sm:text-6xl lg:text-7xl">
               Viaje com conforto, segurança e presença profissional em cada trajeto.
             </h1>

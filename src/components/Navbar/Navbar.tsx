@@ -52,7 +52,7 @@ export function Navbar() {
           </span>
           <div>
             <p className="font-serif text-xl text-white">{`Transporte Executivo`}</p>
-            <p className="text-xs uppercase tracking-[0.28em] text-white/55">viagens e transfers</p>
+            <p className="text-xs uppercase tracking-[0.28em] text-white/55">viagens e excursões</p>
           </div>
         </NavLink>
 

@@ -3,10 +3,10 @@ import { ContactSection } from "@/components/ContactSection";
 import { DifferentialsSection } from "@/components/DifferentialsSection";
 import { GallerySection } from "@/components/GallerySection";
 import { Hero } from "@/components/Hero";
+import { LastImagesSection } from "@/components/LastImagesSection";
 import { Seo } from "@/components/Seo";
 import { ServicesSection } from "@/components/ServicesSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
-import { UpcomingExcursions } from "@/components/UpcomingExcursions";
 
 export function HomePage() {
   return (
@@ -18,7 +18,7 @@ export function HomePage() {
       <Hero />
       <DifferentialsSection />
       <ServicesSection compact />
-      <UpcomingExcursions />
+      <LastImagesSection />
       <AboutSection />
       <GallerySection preview />
       <TestimonialsSection />
