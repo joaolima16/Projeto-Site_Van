@@ -2,7 +2,7 @@ import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
 import { DifferentialsSection } from "@/components/DifferentialsSection";
 import { Hero } from "@/components/Hero";
-import { LastImagesSection } from "@/components/LastImages/LastImagesSection";
+import { LastImagesSection } from "@/components/LastTrips/LastTrips";
 import { Seo } from "@/components/Seo";
 import { ServicesSection } from "@/components/ServicesSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";

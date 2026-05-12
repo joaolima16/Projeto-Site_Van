@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { travels } from "@/data/Travel";
 import IconCalendar from "@/lib/IconCalendar";
 import IconPin from "@/lib/IconPin";
-import { DetailView } from "./DetailView/DetailView";
+import { DetailView } from "../DetailView/DetailView";
 import type { GridViewProps, Travel } from "./types";
 
 export default function TravelGallery() {
+  const location = useLocation();
   const [selecionada, setSelecionada] = useState<Travel | null>(null);
   const [fotoAtiva, setFotoAtiva] = useState<string | null>(null);
 
@@ -18,6 +20,23 @@ export default function TravelGallery() {
     setSelecionada(null);
     setFotoAtiva(null);
   };
+
+  useEffect(() => {
+    const selectedTravelId = (location.state as { selectedTravelId?: number } | null)?.selectedTravelId;
+
+    if (!selectedTravelId) {
+      return;
+    }
+
+    const selectedTravel = travels.find((trip) => trip.id === selectedTravelId);
+
+    if (!selectedTravel) {
+      return;
+    }
+
+    setSelecionada(selectedTravel);
+    setFotoAtiva(selectedTravel.capa);
+  }, [location.state]);
 
   if (selecionada) {
     return (

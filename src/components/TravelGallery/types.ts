@@ -16,16 +16,10 @@ export interface Travel {
   corLightClass: string;
   corRingClass: string;
   num: string;
+  placeholder?: string;
 }
 
 export interface GridViewProps {
   viagens: Travel[];
   onSelect: (viagem: Travel) => void;
-}
-
-export interface DetailViewProps {
-  viagem: Travel;
-  fotoAtiva: string | null;
-  setFotoAtiva: (url: string) => void;
-  onVoltar: () => void;
 }

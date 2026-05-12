@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { contato, socialLinks } from "@/data/contact";
 
 const quickLinks = [
-  { to: "/", label: "InÃ­cio" },
+  { to: "/", label: "Ini­cio" },
   { to: "/servicos", label: "Serviços" },
   { to: "/galeria", label: "Galeria" },
   { to: "/contato", label: "Contato" },

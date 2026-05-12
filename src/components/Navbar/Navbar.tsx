@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, MessageCircle, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
-import logoVan from "@/assets/logo-van.svg";
+import logoVan from "@/assets/logo-van.png";
 
 const links = [
   { to: "/", label: "Inicio" },

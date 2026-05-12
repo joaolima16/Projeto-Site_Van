@@ -1,4 +1,4 @@
-import { GallerySection } from "@/components/GallerySection";
+import TravelGallery from "@/components/TravelGallery";
 import { Seo } from "@/components/Seo";
 
 export function GalleryPage() {
@@ -17,7 +17,7 @@ export function GalleryPage() {
           </p>
         </div>
       </section>
-      <GallerySection />
+      <TravelGallery />
     </>
   );
 }

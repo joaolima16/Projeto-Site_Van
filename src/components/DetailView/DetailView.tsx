@@ -1,7 +1,7 @@
 import IconArrowLeft from "@/lib/IconArrowLeft";
 import IconCalendar from "@/lib/IconCalendar";
 import IconPin from "@/lib/IconPin";
-import type { DetailViewProps } from "../types";
+import type{ DetailViewProps } from "./types";
 
 export function DetailView({ viagem, fotoAtiva, setFotoAtiva, onVoltar }: DetailViewProps) {
   return (

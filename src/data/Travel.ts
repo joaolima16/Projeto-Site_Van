@@ -26,6 +26,7 @@ export const travels: Travel[] = [
     corLightClass: "text-[#E1F5EE]",
     corRingClass: "ring-[#0F6E56]",
     num: "01",
+    placeholder: "@/assets/viagem-1.jpeg",
   },
   {
     id: 2,
@@ -51,6 +52,7 @@ export const travels: Travel[] = [
     corLightClass: "text-[#E6F1FB]",
     corRingClass: "ring-[#185FA5]",
     num: "02",
+    placeholder: "@/assets/viagem-1.jpeg",
   },
   {
     id: 3,
@@ -77,6 +79,7 @@ export const travels: Travel[] = [
     corLightClass: "text-[#FAEEDA]",
     corRingClass: "ring-[#854F0B]",
     num: "03",
+        placeholder: "@/assets/viagem-1.jpeg",
   },
   {
     id: 4,
@@ -102,6 +105,7 @@ export const travels: Travel[] = [
     corLightClass: "text-[#EEEDFE]",
     corRingClass: "ring-[#3C3489]",
     num: "04",
+        placeholder: "@/assets/viagem-1.jpeg",
   },
   {
     id: 5,
