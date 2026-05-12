@@ -25,6 +25,9 @@ export function ServicesSection({ compact = false }: ServicesSectionProps) {
               <span className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">{service.eyebrow}</span>
               <h3 className="mt-4 font-serif text-3xl text-white">{service.title}</h3>
               <p className="mt-4 text-sm leading-7 text-white/72">{service.description}</p>
+              <p className="mt-4 text-xs font-semibold uppercase tracking-[0.22em] text-white/45">
+                Ideal para {service.idealFor}
+              </p>
               <ul className="mt-6 space-y-3 text-sm text-white/78">
                 {service.highlights.map((item) => (
                   <li key={item} className="rounded-2xl border border-white/8 bg-white/5 px-4 py-3">

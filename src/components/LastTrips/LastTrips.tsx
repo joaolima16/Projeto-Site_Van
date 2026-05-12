@@ -37,9 +37,7 @@ export function LastImagesSection() {
                   className="absolute inset-0 h-full w-full object-cover object-[center_28%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[rgba(12,45,94,0.42)] via-transparent to-[rgba(255,255,255,0.08)]" />
-                <div className="last-trip-placeholder-tag absolute bottom-4 left-4">
-                  Viagem {trip.num || `0${index + 1}`}
-                </div>
+          
               </div>
 
               <div className="p-6 transition duration-500 group-hover:bg-[linear-gradient(180deg,rgba(12,45,94,0.015),rgba(200,168,75,0.04))] md:p-7">

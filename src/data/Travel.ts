@@ -26,7 +26,6 @@ export const travels: Travel[] = [
     corLightClass: "text-[#E1F5EE]",
     corRingClass: "ring-[#0F6E56]",
     num: "01",
-    placeholder: "@/assets/viagem-1.jpeg",
   },
   {
     id: 2,
@@ -38,7 +37,7 @@ export const travels: Travel[] = [
     resumo: "Operação fluida com recepção organizada, pontualidade e atendimento premium.",
     descricao:
       "Transfer executivo para evento corporativo de alto padrão. A operação envolveu logística precisa com múltiplos pontos de embarque na Grande São Paulo, coordenação em tempo real via aplicativo e motoristas uniformizados. O grupo foi recepcionado com amenities personalizados e chegou ao evento com 15 minutos de antecedência. Atendimento cinco estrelas do início ao fim.",
-    capa: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80",
+    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/v1778596916/viagem-1_imfi4g.jpg",
     fotos: [
       "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&q=80",
       "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=400&q=80",
@@ -52,7 +51,6 @@ export const travels: Travel[] = [
     corLightClass: "text-[#E6F1FB]",
     corRingClass: "ring-[#185FA5]",
     num: "02",
-    placeholder: "@/assets/viagem-1.jpeg",
   },
   {
     id: 3,
@@ -79,7 +77,6 @@ export const travels: Travel[] = [
     corLightClass: "text-[#FAEEDA]",
     corRingClass: "ring-[#854F0B]",
     num: "03",
-        placeholder: "@/assets/viagem-1.jpeg",
   },
   {
     id: 4,
@@ -105,7 +102,6 @@ export const travels: Travel[] = [
     corLightClass: "text-[#EEEDFE]",
     corRingClass: "ring-[#3C3489]",
     num: "04",
-        placeholder: "@/assets/viagem-1.jpeg",
   },
   {
     id: 5,

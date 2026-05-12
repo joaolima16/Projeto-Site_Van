@@ -16,7 +16,6 @@ export interface Travel {
   corLightClass: string;
   corRingClass: string;
   num: string;
-  placeholder?: string;
 }
 
 export interface GridViewProps {
