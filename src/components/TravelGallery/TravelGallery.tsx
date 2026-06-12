@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { travels } from "@/data/Travel";
 import IconCalendar from "@/lib/IconCalendar";
 import IconPin from "@/lib/IconPin";
+import { buildSrcSet, pickBestSrc } from "@/lib/image";
 import { DetailView } from "../DetailView/DetailView";
 import type { GridViewProps, Travel } from "./types";
 
@@ -84,7 +85,14 @@ function GridView({ viagens, onSelect }: GridViewProps) {
               onClick={() => onSelect(viagem)}
             >
               <div className="relative overflow-hidden aspect-[16/9]">
-                <img src={viagem.capa} alt={viagem.titulo} className="h-full w-full object-cover" loading="lazy" />
+                <img
+                  src={pickBestSrc(viagem.capa, 800)}
+                  srcSet={buildSrcSet(viagem.capa, [400, 800, 1200])}
+                  sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
+                  alt={viagem.titulo}
+                  className="h-full w-full object-cover object-center block"
+                  loading="lazy"
+                />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40" />
 
                 <div className="absolute left-3 top-3">

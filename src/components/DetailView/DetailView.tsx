@@ -2,6 +2,7 @@ import IconArrowLeft from "@/lib/IconArrowLeft";
 import IconCalendar from "@/lib/IconCalendar";
 import IconPin from "@/lib/IconPin";
 import type{ DetailViewProps } from "./types";
+import { buildSrcSet, pickBestSrc } from "@/lib/image";
 
 export function DetailView({ viagem, fotoAtiva, setFotoAtiva, onVoltar }: DetailViewProps) {
   return (
@@ -30,7 +31,13 @@ export function DetailView({ viagem, fotoAtiva, setFotoAtiva, onVoltar }: Detail
 
       <main className="mx-auto max-w-6xl px-6 py-10 font-sans animate-[fadeIn_0.4s_ease]">
         <div className="relative mb-10 h-[420px] overflow-hidden rounded-3xl">
-          <img src={fotoAtiva ?? viagem.capa} alt={viagem.titulo} className="h-full w-full object-cover" />
+          <img
+            src={pickBestSrc(fotoAtiva ?? viagem.capa, 1200)}
+            srcSet={buildSrcSet(fotoAtiva ?? viagem.capa, [800, 1200, 2000])}
+            sizes="100vw"
+            alt={viagem.titulo}
+            className="h-full w-full object-cover object-center block"
+          />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/75" />
 
           <div className="absolute bottom-0 left-0 p-8">
@@ -87,7 +94,14 @@ export function DetailView({ viagem, fotoAtiva, setFotoAtiva, onVoltar }: Detail
                   ].join(" ")}
                   onClick={() => setFotoAtiva(foto)}
                 >
-                  <img src={foto} alt="" className="h-full w-full object-cover" loading="lazy" />
+                  <img
+                    src={pickBestSrc(foto, 400)}
+                    srcSet={buildSrcSet(foto, [200, 400, 800])}
+                    sizes="80px"
+                    alt=""
+                    className="h-full w-full object-cover object-center block"
+                    loading="lazy"
+                  />
                 </div>
               ))}
             </div>

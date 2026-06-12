@@ -433,3 +433,13 @@ textarea {
 .font-body {
   font-family: 'DM Sans', sans-serif;
 }
+
+/* Ensure object-fit behaves consistently and provide fallbacks */
+img.object-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+  object-position: center;
+  -webkit-object-position: center;
+  display: block;
+}
