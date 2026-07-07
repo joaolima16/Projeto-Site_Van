@@ -1,5 +1,6 @@
 export interface Travel {
   id: number;
+  slug: string;
   titulo: string;
   categoria: string;
   data: string;

@@ -3,6 +3,7 @@ import type { Travel } from "@/components/TravelGallery";
 export const travels: Travel[] = [
   {
     id: 1,
+    slug: "rave-pirassurunga",
     titulo: "Rave Pirassurunga",
     categoria: "Passeio em Grupo",
     data: "27 de abril de 2026",
@@ -28,6 +29,7 @@ export const travels: Travel[] = [
   },
   {
     id: 2,
+    slug: "congresso-paranapiacaba",
     titulo: "Congresso das bruxas e magos paranapiacaba 2026",
     categoria: "Executivo",
     data: "30 de maio de 2026",
@@ -39,8 +41,7 @@ export const travels: Travel[] = [
     capa: "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto/f_auto/v1781271449/foto-1_aufkug.jpg",
     fotos: [
       "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto/f_auto/v1781271491/foto-2_tawpug.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto/f_auto/v1781272403/foto-3_jzikfs.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1781272730/foto-4_sozbxv.jpg"
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1781273337/foto-3_w2fdfw.jpg",
     ],
     tags: ["Recepção no embarque", "Atendimento VIP", "Pontualidade"],
     cor: "#185FA5",
@@ -52,6 +53,7 @@ export const travels: Travel[] = [
   },
   {
     id: 3,
+    slug: "excursao-pirassurunga",
     titulo: "Excursão para Pirassurunga",
     categoria: "Turismo",
     data: "10 de maio de 2026",
@@ -77,6 +79,7 @@ export const travels: Travel[] = [
   },
   {
     id: 4,
+    slug: "museu-do-ipiranga",
     titulo: "Excursão - Museu do Ipiranga",
     categoria: "Turismo",
     data: "22 de março de 2026",
@@ -101,21 +104,24 @@ export const travels: Travel[] = [
   },
   {
     id: 5,
-    titulo: "Bonito — MS",
+    slug: "casamento-mogi",
+    titulo: "Casamento - Mogi das Cruzes",
     categoria: "Ecoturismo",
-    data: "8 de março de 2026",
-    periodo: "8–12 Mar 2026",
-    local: "Bonito, MS",
-    resumo: "Flutuação no Rio Sucuri, Gruta do Lago Azul e paisagens únicas do Cerrado.",
+    data: "10 de fevereiro de 2026",
+    periodo: "10-11 Fev 2026",
+    local: "Mogi das Cruzes, SP",
+    resumo: "Transporte de convidados para casamento em Mogi das cruzes",
     descricao:
-      "Cinco dias de puro contato com a natureza em Bonito, o destino de ecoturismo mais premiado do Brasil. A flutuação no Rio Sucuri foi o ponto alto — águas translúcidas com visibilidade de mais de 50 metros. O grupo também visitou a Gruta do Lago Azul, fez rappel na Gruta do Mimoso e passeou de boia no Rio da Prata.",
-    capa: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+      "Transporte de convidados para casamento em Mogi das Cruzes, SP. O grupo foi recepcionado com amenities personalizados e chegou ao evento com 15 minutos de antecedência. Atendimento cinco estrelas do início ao fim.",
+    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/v1783434883/foto-4_tsrokv.jpg",
     fotos: [
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&q=80",
-      "https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=400&q=80",
-      "https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=400&q=80",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1783434883/foto-1_tsrokv.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1783434883/foto-2_at6b8h.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1783434884/foto-3_lavxeb.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1783435347/foto-5_iheddq.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1783435348/foto-6_mmnqg4.jpg"
     ],
-    tags: ["5 dias", "Flutuação", "Ecoturismo"],
+    tags: ["Transporte de convidados", "Casamento", "Ecoturismo"],
     cor: "#3B6D11",
     corLight: "#EAF3DE",
     corClass: "bg-[#3B6D11]",
@@ -125,6 +131,7 @@ export const travels: Travel[] = [
   },
   {
     id: 6,
+    slug: "campos-do-jordao",
     titulo: "Campos do Jordão",
     categoria: "Inverno",
     data: "28 de fevereiro de 2026",

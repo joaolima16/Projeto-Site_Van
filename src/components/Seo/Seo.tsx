@@ -14,7 +14,7 @@ function upsertMeta(selector: string, attributes: Record<string, string>) {
   });
 }
 
-export function Seo({ title, description, image = "/og-image.jpg" }: SeoProps) {
+export function Seo({ title, description, image = "/og-image.jpg", jsonLd }: SeoProps) {
   useEffect(() => {
     document.title = title;
     document.documentElement.lang = "pt-BR";
@@ -24,7 +24,29 @@ export function Seo({ title, description, image = "/og-image.jpg" }: SeoProps) {
     upsertMeta('meta[property="og:description"]', { property: "og:description", content: description });
     upsertMeta('meta[property="og:image"]', { property: "og:image", content: image });
     upsertMeta('meta[property="og:type"]', { property: "og:type", content: "website" });
-  }, [description, image, title]);
+    upsertMeta('meta[name="twitter:card"]', { name: "twitter:card", content: "summary_large_image" });
+    upsertMeta('meta[name="twitter:title"]', { name: "twitter:title", content: title });
+    upsertMeta('meta[name="twitter:description"]', { name: "twitter:description", content: description });
+    upsertMeta('meta[name="twitter:image"]', { name: "twitter:image", content: image });
+
+    let jsonLdScript = document.head.querySelector('script[type="application/ld+json"]') as HTMLScriptElement | null;
+
+    if (jsonLd) {
+      if (!jsonLdScript) {
+        jsonLdScript = document.createElement("script");
+        jsonLdScript.type = "application/ld+json";
+        document.head.appendChild(jsonLdScript);
+      }
+      jsonLdScript.textContent = JSON.stringify(jsonLd);
+    } else if (jsonLdScript) {
+      jsonLdScript.remove();
+    }
+
+    return () => {
+      const script = document.head.querySelector('script[type="application/ld+json"]');
+      if (script) script.remove();
+    };
+  }, [description, image, title, jsonLd]);
 
   return null;
 }

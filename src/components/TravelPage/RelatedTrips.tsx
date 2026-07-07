@@ -1,51 +1,31 @@
 import { useNavigate } from "react-router-dom";
+import { CalendarDays, MapPinned } from "lucide-react";
 import { travels } from "@/data/Travel";
-import IconCalendar from "@/lib/IconCalendar";
-import IconPin from "@/lib/IconPin";
 import { buildSrcSet, pickBestSrc } from "@/lib/image";
-import type { GridViewProps, Travel } from "./types";
+import { SectionReveal } from "@/components/SectionReveal";
+import type { Travel } from "@/components/TravelGallery";
 
-export default function TravelGallery() {
+export function RelatedTrips({ currentId }: { currentId: number }) {
   const navigate = useNavigate();
 
-  const handleSelect = (viagem: Travel): void => {
-    navigate(`/viagem/${viagem.slug}`);
-  };
+  const related = travels
+    .filter((t) => t.id !== currentId)
+    .slice(0, 3);
 
-  return <GridView viagens={travels} onSelect={handleSelect} />;
-}
+  if (related.length === 0) return null;
 
-function GridView({ viagens, onSelect }: GridViewProps) {
   return (
-    <div className="min-h-screen bg-stone-50">
-
-      <section className="mx-auto max-w-6xl px-6 pb-10 pt-16 font-sans">
-        <div className="mb-4 flex items-center gap-2">
-          <div className="h-1.5 w-1.5 rounded-full bg-stone-300" />
-          <span className="text-xs font-medium uppercase tracking-widest text-stone-400">Ultimas viagens</span>
-        </div>
-
-        <h1 className="mb-4 font-serif text-5xl leading-tight text-stone-800 md:text-6xl">
-          Cada saída,
-          <br />
-          <span className="text-[#22368b]">uma história.</span>
-        </h1>
-
-        <p className="max-w-xl text-base leading-relaxed text-stone-500">
-          Registros de excursões, transfers e passeios organizados com cuidado. Clique em uma viagem para ver todos os
-          detalhes.
-        </p>
-      </section>
-
-      <main className="mx-auto max-w-6xl px-6 pb-20 font-sans">
+    <section className="page-shell pb-14 md:pb-20">
+      <SectionReveal>
+        <h2 className="mb-8 font-serif text-3xl text-stone-800">Outras viagens</h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {viagens.map((viagem) => (
+          {related.map((viagem: Travel) => (
             <article
               key={viagem.id}
               className="cursor-pointer overflow-hidden rounded-2xl border border-stone-100 bg-white transition-shadow hover:shadow-lg"
-              onClick={() => onSelect(viagem)}
+              onClick={() => navigate(`/viagem/${viagem.slug}`)}
             >
-              <div className="relative overflow-hidden aspect-[16/9]">
+              <div className="relative aspect-[16/9] overflow-hidden">
                 <img
                   src={pickBestSrc(viagem.capa, 800)}
                   srcSet={buildSrcSet(viagem.capa, [400, 800, 1200])}
@@ -67,19 +47,17 @@ function GridView({ viagens, onSelect }: GridViewProps) {
                     {viagem.categoria}
                   </span>
                 </div>
-
-                <span className="absolute bottom-3 right-3 font-serif text-2xl font-light text-white opacity-50">
-                  {viagem.num}
-                </span>
               </div>
 
               <div className="p-5">
-                <h2 className="mb-1 font-serif text-lg leading-snug text-stone-800">{viagem.titulo}</h2>
+                <h3 className="mb-1 font-serif text-lg leading-snug text-stone-800">
+                  {viagem.titulo}
+                </h3>
                 <div className="mb-3 flex items-center gap-1.5 text-xs text-stone-400">
-                  <IconCalendar />
+                  <CalendarDays className="h-3 w-3" />
                   {viagem.data}
                   <span className="mx-1 opacity-40">·</span>
-                  <IconPin />
+                  <MapPinned className="h-3 w-3" />
                   {viagem.local}
                 </div>
                 <p className="text-sm leading-relaxed text-stone-500">{viagem.resumo}</p>
@@ -87,8 +65,7 @@ function GridView({ viagens, onSelect }: GridViewProps) {
             </article>
           ))}
         </div>
-      </main>
-    </div>
+      </SectionReveal>
+    </section>
   );
 }
-

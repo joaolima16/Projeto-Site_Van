@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { ScrollToTop } from "@/components/ScrollToTop";
@@ -7,6 +8,18 @@ import { ContactPage } from "@/pages/ContactPage";
 import { HomePage } from "@/pages/HomePage";
 import { ServicesPage } from "@/pages/ServicesPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+const TravelPage = lazy(() =>
+  import("@/pages/TravelPage").then((m) => ({ default: m.TravelPage })),
+);
+
+function PageLoader() {
+  return (
+    <div className="flex min-h-[60vh] items-center justify-center">
+      <div className="h-8 w-8 animate-spin rounded-full border-2 border-primary border-t-transparent" />
+    </div>
+  );
+}
 
 function App() {
   return (
@@ -19,6 +32,14 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/servicos" element={<ServicesPage />} />
             <Route path="/galeria" element={<TravelGallery />} />
+            <Route
+              path="/viagem/:slug"
+              element={
+                <Suspense fallback={<PageLoader />}>
+                  <TravelPage />
+                </Suspense>
+              }
+            />
             <Route path="/contato" element={<ContactPage />} />
           </Routes>
         </main>

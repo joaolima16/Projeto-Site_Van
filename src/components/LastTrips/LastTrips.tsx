@@ -28,7 +28,7 @@ export function LastImagesSection() {
           <SectionReveal key={trip.id} className="h-full">
             <article
               className="surface-card group h-full cursor-pointer overflow-hidden transition duration-500 hover:-translate-y-2 hover:shadow-[0_28px_70px_rgba(12,45,94,0.18)]"
-              onClick={() => navigate("/galeria", { state: { selectedTravelId: trip.id } })}
+              onClick={() => navigate(`/viagem/${trip.slug}`)}
             >
               <div className="last-trip-placeholder relative min-h-72 overflow-hidden transition duration-500 group-hover:scale-[1.02]">
                 <img
