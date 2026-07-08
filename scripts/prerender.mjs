@@ -1,7 +1,6 @@
 import { createServer } from "http";
-import { readFile, writeFile, mkdir, cp } from "fs/promises";
+import { readFile, writeFile, mkdir } from "fs/promises";
 import { join } from "path";
-import puppeteer from "puppeteer";
 
 const DIST_DIR = join(import.meta.dirname, "..", "dist");
 const PORT = 4173;
@@ -16,7 +15,7 @@ const routes = [
   "/viagem/excursao-pirassurunga",
   "/viagem/museu-do-ipiranga",
   "/viagem/casamento-mogi",
-  "/viagem/campos-do-jordao",
+  "/viagem/monte-siao",
 ];
 
 const MIME = {
@@ -32,6 +31,8 @@ const MIME = {
   ".ico": "image/x-icon",
   ".woff": "font/woff",
   ".woff2": "font/woff2",
+  ".xml": "application/xml",
+  ".txt": "text/plain",
 };
 
 function getMimeType(url) {
@@ -39,14 +40,40 @@ function getMimeType(url) {
   return MIME[ext] || "application/octet-stream";
 }
 
+async function launchBrowser() {
+  const isVercel = !!process.env.VERCEL;
+
+  if (isVercel) {
+    const chromium = await import("@sparticuz/chromium");
+    const puppeteerCore = await import("puppeteer-core");
+    return puppeteerCore.default.launch({
+      args: chromium.default.args,
+      defaultViewport: chromium.default.defaultViewport,
+      executablePath: await chromium.default.executablePath(),
+      headless: true,
+    });
+  }
+
+  const puppeteer = await import("puppeteer");
+  return puppeteer.default.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-gpu"],
+  });
+}
+
 async function prerender() {
-  let originalHtml = await readFile(join(DIST_DIR, "index.html"), "utf8");
+  const originalHtml = await readFile(join(DIST_DIR, "index.html"), "utf8");
 
   console.log("[prerender] Starting static server...");
   const server = createServer(async (req, res) => {
     const urlPath = req.url?.split("?")[0] || "/";
 
-    if (urlPath.startsWith("/assets/") || urlPath.startsWith("/favicon")) {
+    if (
+      urlPath.startsWith("/assets/") ||
+      urlPath.startsWith("/favicon") ||
+      urlPath.endsWith(".xml") ||
+      urlPath.endsWith(".txt")
+    ) {
       try {
         const data = await readFile(join(DIST_DIR, urlPath));
         res.writeHead(200, { "Content-Type": getMimeType(urlPath) });
@@ -65,10 +92,7 @@ async function prerender() {
   await new Promise((resolve) => server.listen(PORT, () => resolve(server)));
 
   console.log("[prerender] Launching browser...");
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-gpu"],
-  });
+  const browser = await launchBrowser();
 
   for (const route of routes) {
     const url = `http://localhost:${PORT}${route}`;
