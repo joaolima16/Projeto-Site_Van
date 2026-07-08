@@ -12,12 +12,12 @@ export const travels: Travel[] = [
     resumo: "Transporte de jovens para Rave localizada em Pirassurunga, SP, com embarque às Dia 23/06 às 16h e retorno  dia 24/06 às 20h",
     descricao:
       "Transporte de jovens para Rave localizada em Pirassurunga, SP, com embarque às Dia 23/06 às 16h e retorno  dia 24/06 às 20h. A operação envolveu logística precisa. O grupo foi recepcionado com amenities personalizados e chegou ao evento com 15 minutos de antecedência. Atendimento cinco estrelas do início ao fim.",
-    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/v1781268696/foto-1_gz1urg.jpg",
+    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781268696/foto-1_gz1urg.jpg",
     fotos: [
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1781268696/foto-1_gz1urg.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1781270358/foto-5_ozfqn4.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto/f_auto/v1781270784/foto-3_w3fig2.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto/f_auto/v1781270850/foto-6_ema5kj.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781268696/foto-1_gz1urg.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781270358/foto-5_ozfqn4.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781270784/foto-3_w3fig2.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781270850/foto-6_ema5kj.jpg",
     ],
     tags: ["Ida e volta", "Jovens", "Diversão"],
     cor: "#0F6E56",
@@ -38,10 +38,10 @@ export const travels: Travel[] = [
     resumo: "Congresso das bruxas e magos em Paranapiacaba, SP, com embarque dia 30/05 às 13h e retorno dia 31/05 às 18h",
     descricao:
       "Transfer executivo para evento corporativo de alto padrão. A operação envolveu logística precisa com múltiplos pontos de embarque na Grande São Paulo, coordenação em tempo real via aplicativo e motoristas uniformizados. O grupo foi recepcionado com amenities personalizados e chegou ao evento com 15 minutos de antecedência. Atendimento cinco estrelas do início ao fim.",
-    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto/f_auto/v1781271449/foto-1_aufkug.jpg",
+    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781271449/foto-1_aufkug.jpg",
     fotos: [
-      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto/f_auto/v1781271491/foto-2_tawpug.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1781273337/foto-3_w2fdfw.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781271491/foto-2_tawpug.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781273337/foto-3_w2fdfw.jpg",
     ],
     tags: ["Recepção no embarque", "Atendimento VIP", "Pontualidade"],
     cor: "#185FA5",
@@ -62,12 +62,12 @@ export const travels: Travel[] = [
     resumo: "Vista panorâmica, trilhas guiadas e gastronomia local incomparável.",
     descricao:
       "Excursão para Pirassurunga, uma cidade rica em história e natureza. O grupo visitou o Parque Estadual de Itatinga, fez trilhas pelas florestas e desfrutou de uma deliciosa refeição local. A hospedagem foi em pousada boutique com café da manhã colonial e atendimento personalizado.",
-    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/v1781273450/foto-7_xaqf8s.jpg",
+    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781273450/foto-7_xaqf8s.jpg",
     fotos: [
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1781273738/foto-8_tszfzu.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1781273446/foto-9_vn7ask.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1781273454/foto-10_oys690.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1781273732/foto-12_vwbv5s.jpg"
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781273738/foto-8_tszfzu.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781273446/foto-9_vn7ask.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781273454/foto-10_oys690.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781273732/foto-12_vwbv5s.jpg"
     ],
     tags: ["Excursão", "Trilhas", "Gastronomia"],
     cor: "#854F0B",
@@ -88,11 +88,11 @@ export const travels: Travel[] = [
     resumo: "Visita ao Museu do Ipiranga, passeio pelo Parque da Independência e almoço em restaurante tradicional.",
     descricao:
       "Visita ao Museu do Ipiranga, passeio pelo Parque da Independência e almoço em restaurante tradicional.", 
-    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/v1781275124/foto-1_mowlui.jpg",
+    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781275124/foto-1_mowlui.jpg",
     fotos: [
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1781275121/foto-3_sca87o.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1781275122/foto-2_xxha84.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1781275435/foto-4_l3bbcm.jpg"
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781275121/foto-3_sca87o.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781275122/foto-2_xxha84.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781275435/foto-4_l3bbcm.jpg"
     ],
     tags: ["Ida e volta", "Museu", "Cultural"],
     cor: "#3C3489",
@@ -106,20 +106,19 @@ export const travels: Travel[] = [
     id: 5,
     slug: "casamento-mogi",
     titulo: "Casamento - Mogi das Cruzes",
-    categoria: "Ecoturismo",
+    categoria: "Executivo",
     data: "10 de fevereiro de 2026",
     periodo: "10-11 Fev 2026",
     local: "Mogi das Cruzes, SP",
     resumo: "Transporte de convidados para casamento em Mogi das cruzes",
     descricao:
       "Transporte de convidados para casamento em Mogi das Cruzes, SP. O grupo foi recepcionado com amenities personalizados e chegou ao evento com 15 minutos de antecedência. Atendimento cinco estrelas do início ao fim.",
-    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/v1783434883/foto-4_tsrokv.jpg",
+    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1783434883/foto-4_tsrokv.jpg",
     fotos: [
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1783434883/foto-1_tsrokv.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1783434883/foto-2_at6b8h.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1783434884/foto-3_lavxeb.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1783435347/foto-5_iheddq.jpg",
-      "https://res.cloudinary.com/djwbhycl0/image/upload/v1783435348/foto-6_mmnqg4.jpg"
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1783434883/foto-2_at6b8h.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1783434884/foto-3_lavxeb.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1783435347/foto-5_iheddq.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1783435348/foto-6_mmnqg4.jpg"
     ],
     tags: ["Transporte de convidados", "Casamento", "Ecoturismo"],
     cor: "#3B6D11",
@@ -131,20 +130,20 @@ export const travels: Travel[] = [
   },
   {
     id: 6,
-    slug: "campos-do-jordao",
-    titulo: "Campos do Jordão",
-    categoria: "Inverno",
-    data: "28 de fevereiro de 2026",
-    periodo: "28 Fev 2026",
-    local: "Campos do Jordão, SP",
-    resumo: "Festival de inverno, chocolates artesanais e paisagem de montanha.",
+    slug: "monte-siao",
+    titulo: "Monte Sião",
+    categoria: "Turismo",
+    data: "20 de abril de 2026",
+    periodo: "20 Abr 2026",
+    local: "Monte Sião, MG",
+    resumo: "Turismo gastronômico em Monte Sião, MG, com visita a chocolaterias artesanais e degustação de vinhos.",
     descricao:
-      "Passeio especial durante o Festival de Inverno de Campos do Jordão. O grupo percorreu o centro histórico, visitou chocolaterias artesanais, fez o passeio de Maria Fumaça e apreciou shows culturais ao ar livre. O frio de 8°C foi o tempero perfeito para uma caneca de chocolate quente e vinho tinto na Capivari.",
-    capa: "https://images.unsplash.com/photo-1548777123-e216912df7d8?w=800&q=80",
+      "Turismo gastronômico em Monte Sião, MG, com visita a chocolaterias artesanais e degustação de vinhos. O grupo foi recepcionado com amenities personalizados e chegou ao evento com 15 minutos de antecedência. Atendimento cinco estrelas do início ao fim.",
+    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/v1783530542/monte-siao_fqy5i4.jpg",
     fotos: [
-      "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?w=400&q=80",
-      "https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?w=400&q=80",
-      "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=400&q=80",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1783530246/foto-3_psp8d9.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1783530245/foto-1_uwhnxi.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1783530245/foto-2_ffczsw.jpg",
     ],
     tags: ["Ida e volta", "Festival", "Chocolate"],
     cor: "#993556",

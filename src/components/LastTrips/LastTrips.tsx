@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { SectionHeader } from "@/components/SectionHeader";
 import { SectionReveal } from "@/components/SectionReveal";
 import { travels } from "@/data/Travel";
+import { buildSrcSet, pickBestSrc } from "@/lib/image";
 
 export function LastImagesSection() {
   const navigate = useNavigate();
@@ -32,9 +33,12 @@ export function LastImagesSection() {
             >
               <div className="last-trip-placeholder relative min-h-72 overflow-hidden transition duration-500 group-hover:scale-[1.02]">
                 <img
-                  src={trip.capa}
+                  src={pickBestSrc(trip.capa, 800)}
+                  srcSet={buildSrcSet(trip.capa, [400, 800, 1600])}
+                  sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
                   alt={trip.titulo}
                   className="absolute inset-0 h-full w-full object-cover object-[center_28%]"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[rgba(12,45,94,0.42)] via-transparent to-[rgba(255,255,255,0.08)]" />
           

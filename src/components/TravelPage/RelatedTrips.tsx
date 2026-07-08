@@ -28,7 +28,7 @@ export function RelatedTrips({ currentId }: { currentId: number }) {
               <div className="relative aspect-[16/9] overflow-hidden">
                 <img
                   src={pickBestSrc(viagem.capa, 800)}
-                  srcSet={buildSrcSet(viagem.capa, [400, 800, 1200])}
+                  srcSet={buildSrcSet(viagem.capa, [400, 800, 1600])}
                   sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
                   alt={viagem.titulo}
                   className="h-full w-full object-cover object-center block"

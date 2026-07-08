@@ -3,18 +3,17 @@ export function buildSrcForWidth(url: string, width: number): string {
     if (url.includes("images.unsplash.com")) {
       const u = new URL(url);
       u.searchParams.set("w", String(width));
-      if (!u.searchParams.get("q")) u.searchParams.set("q", "80");
+      if (!u.searchParams.get("q")) u.searchParams.set("q", "90");
       return u.toString();
     }
 
     if (url.includes("res.cloudinary.com")) {
       const parts = url.split("/upload/");
       if (parts.length === 2) {
-        return parts[0] + `/upload/w_${width},f_auto,q_auto/` + parts[1];
+        return parts[0] + `/upload/w_${width},f_auto,q_auto:best/` + parts[1];
       }
     }
 
-    // Fallback: try to set a `w` query param
     const u = new URL(url);
     u.searchParams.set("w", String(width));
     return u.toString();
@@ -23,11 +22,11 @@ export function buildSrcForWidth(url: string, width: number): string {
   }
 }
 
-export function buildSrcSet(url: string, widths: number[] = [400, 800, 1200]): string {
+export function buildSrcSet(url: string, widths: number[] = [800, 1600, 2400]): string {
   return widths.map((w) => `${buildSrcForWidth(url, w)} ${w}w`).join(", ");
 }
 
-export function pickBestSrc(url: string, preferWidth = 800): string {
+export function pickBestSrc(url: string, preferWidth = 1600): string {
   return buildSrcForWidth(url, preferWidth);
 }
 

@@ -21,8 +21,8 @@ export function TravelGallerySection({ viagem }: { viagem: Travel }) {
                 className="group relative aspect-[4/3] cursor-pointer overflow-hidden rounded-xl transition duration-200 hover:scale-[1.03]"
               >
                 <img
-                  src={pickBestSrc(foto, 400)}
-                  srcSet={buildSrcSet(foto, [200, 400, 800])}
+                  src={pickBestSrc(foto, 600)}
+                  srcSet={buildSrcSet(foto, [300, 600, 1200])}
                   sizes="(min-width:1024px) 25vw, (min-width:640px) 33vw, 50vw"
                   alt={`${viagem.titulo} - foto ${index + 1}`}
                   className="h-full w-full object-cover object-center block"
@@ -52,8 +52,8 @@ export function TravelGallerySection({ viagem }: { viagem: Travel }) {
             <X className="h-6 w-6" />
           </button>
           <img
-            src={pickBestSrc(lightbox, 1200)}
-            srcSet={buildSrcSet(lightbox, [800, 1200, 2000])}
+            src={pickBestSrc(lightbox, 1920)}
+            srcSet={buildSrcSet(lightbox, [960, 1920])}
             sizes="90vw"
             alt="Foto ampliada"
             className="max-h-[85vh] max-w-[90vw] rounded-lg object-contain"

@@ -7,8 +7,8 @@ export function TravelHero({ viagem }: { viagem: Travel }) {
   return (
     <section className="relative h-[60vh] min-h-[400px] overflow-hidden">
       <img
-        src={pickBestSrc(viagem.capa, 1200)}
-        srcSet={buildSrcSet(viagem.capa, [800, 1200, 2000])}
+        src={pickBestSrc(viagem.capa, 1920)}
+        srcSet={buildSrcSet(viagem.capa, [960, 1920])}
         sizes="100vw"
         alt={viagem.titulo}
         className="absolute inset-0 h-full w-full object-cover object-center block"

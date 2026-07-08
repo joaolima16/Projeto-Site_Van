@@ -48,7 +48,7 @@ function GridView({ viagens, onSelect }: GridViewProps) {
               <div className="relative overflow-hidden aspect-[16/9]">
                 <img
                   src={pickBestSrc(viagem.capa, 800)}
-                  srcSet={buildSrcSet(viagem.capa, [400, 800, 1200])}
+                  srcSet={buildSrcSet(viagem.capa, [400, 800, 1600])}
                   sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
                   alt={viagem.titulo}
                   className="h-full w-full object-cover object-center block"
@@ -87,6 +87,10 @@ function GridView({ viagens, onSelect }: GridViewProps) {
             </article>
           ))}
         </div>
+
+        <p className="mt-10 text-center font-serif text-xl text-stone-400 italic">
+          Em breve mais viagens...
+        </p>
       </main>
     </div>
   );
