@@ -3,8 +3,8 @@ import type { Travel } from "@/components/TravelGallery";
 export const travels: Travel[] = [
   {
     id: 1,
-    slug: "rave-pirassurunga",
-    titulo: "Rave Pirassurunga",
+    slug: "Festa Eletrônica - Pirassurunga",
+    titulo: "Festa Eletrônica - Pirassurunga",
     categoria: "Passeio em Grupo",
     data: "27 de abril de 2026",
     periodo: "27 Abr 2026",
@@ -29,7 +29,7 @@ export const travels: Travel[] = [
   },
   {
     id: 2,
-    slug: "congresso-paranapiacaba",
+    slug: "Congresso das bruxas e magos Paranapiacaba 2026",
     titulo: "Congresso das bruxas e magos paranapiacaba 2026",
     categoria: "Executivo",
     data: "30 de maio de 2026",
