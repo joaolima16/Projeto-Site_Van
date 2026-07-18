@@ -10,6 +10,7 @@ export function ServicesPage() {
       <Seo
         title="Serviços | Transporte Executivo"
         description="Conheça os formatos de atendimento: excursões em grupo, viagens fretadas e transfers executivos."
+        url="https://transporte-executivo.vercel.app/servicos"
       />
       <section className="page-shell pb-16 pt-32 md:pb-20 md:pt-36">
         <div className="max-w-3xl">

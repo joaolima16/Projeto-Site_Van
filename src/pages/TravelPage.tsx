@@ -35,6 +35,7 @@ export function TravelPage() {
         title={`${viagem.titulo} | Transporte Executivo`}
         description={viagem.resumo}
         image={viagem.capa}
+        url={`https://transporte-executivo.vercel.app/viagem/${viagem.slug}`}
         jsonLd={jsonLd}
       />
       <TravelHero viagem={viagem} />

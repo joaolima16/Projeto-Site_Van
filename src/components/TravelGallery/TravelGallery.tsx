@@ -3,6 +3,7 @@ import { travels } from "@/data/Travel";
 import IconCalendar from "@/lib/IconCalendar";
 import IconPin from "@/lib/IconPin";
 import { buildSrcSet, pickBestSrc } from "@/lib/image";
+import { Seo } from "@/components/Seo";
 import type { GridViewProps, Travel } from "./types";
 
 export default function TravelGallery() {
@@ -12,7 +13,16 @@ export default function TravelGallery() {
     navigate(`/viagem/${viagem.slug}`);
   };
 
-  return <GridView viagens={travels} onSelect={handleSelect} />;
+  return (
+    <>
+      <Seo
+        title="Galeria de Viagens | Transporte Executivo"
+        description="Confira registros de excursões, transfers e viagens fretadas. Clique em uma viagem para ver fotos e detalhes completos."
+        url="https://transporte-executivo.vercel.app/galeria"
+      />
+      <GridView viagens={travels} onSelect={handleSelect} />
+    </>
+  );
 }
 
 function GridView({ viagens, onSelect }: GridViewProps) {
