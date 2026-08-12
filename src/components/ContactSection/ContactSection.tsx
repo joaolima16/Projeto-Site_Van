@@ -68,80 +68,80 @@ export function ContactSection() {
   return (
     <section className="page-shell py-18 md:py-24">
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-        <SectionReveal className="surface-card p-8 md:p-10">
+        <SectionReveal className="surface-card p-5 sm:p-6 md:p-8">
           <SectionHeader
             eyebrow="Contato"
             title="Solicite orçamento com contexto claro desde a primeira mensagem."
             description="A melhor conversão para esse tipo de negócio costuma acontecer no WhatsApp. O formulário abaixo organiza os dados e já envia tudo pronto para a conversa."
           />
 
-          <div className="mt-8 space-y-4 text-sm text-ink/72">
-            <a href={socialLinks.whatsapp} target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-2xl border border-primary/10 bg-white px-4 py-4 transition hover:border-primary/30">
+          <div className="mt-6 space-y-3 text-sm text-ink/72">
+            <a href={socialLinks.whatsapp} target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-xl border border-primary/10 bg-white px-3.5 py-3 transition hover:border-primary/30">
               <WhatsAppIcon className="h-5 w-5 text-primary" />
               <span>{contato.telefone}</span>
             </a>
-            <a href={socialLinks.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-2xl border border-primary/10 bg-white px-4 py-4 transition hover:border-primary/30">
+            <a href={socialLinks.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-xl border border-primary/10 bg-white px-3.5 py-3 transition hover:border-primary/30">
               <InstagramIcon className="h-5 w-5 text-primary" />
               <span>{contato.instagram}</span>
             </a>
-            <div className="flex items-center gap-3 rounded-2xl border border-primary/10 bg-white px-4 py-4">
+            <div className="flex items-center gap-3 rounded-xl border border-primary/10 bg-white px-3.5 py-3">
               <MapPin className="h-5 w-5 text-primary" />
               <span>{contato.cidade}</span>
             </div>
-            <div className="flex items-center gap-3 rounded-2xl border border-primary/10 bg-white px-4 py-4">
+            <div className="flex items-center gap-3 rounded-xl border border-primary/10 bg-white px-3.5 py-3">
               <Phone className="h-5 w-5 text-primary" />
               <span>Atendimento para viagens, transfers e fretamento</span>
             </div>
           </div>
         </SectionReveal>
 
-        <SectionReveal className="feature-card p-8 md:p-10">
-          <form className="grid gap-5" onSubmit={handleSubmit}>
-            <div className="grid gap-5 md:grid-cols-2">
-              <label className="grid gap-2 text-sm text-white/76">
+        <SectionReveal className="feature-card p-5 sm:p-6 md:p-8">
+          <form className="grid gap-4" onSubmit={handleSubmit}>
+            <div className="grid gap-4 md:grid-cols-2">
+              <label className="grid gap-1.5 text-sm text-white/76">
                 Nome
                 <input
                   value={form.name}
                   onChange={(event) => setForm((current) => ({ ...current, name: event.target.value }))}
-                  className="rounded-2xl border border-white/12 bg-white/8 px-4 py-3 text-white outline-none placeholder:text-white/34 focus:border-accent"
+                  className="rounded-xl border border-white/12 bg-white/8 px-3.5 py-2.5 text-white outline-none placeholder:text-white/34 focus:border-accent"
                   placeholder="Seu nome"
                 />
               </label>
-              <label className="grid gap-2 text-sm text-white/76">
+              <label className="grid gap-1.5 text-sm text-white/76">
                 Data desejada
                 <input
                   type="date"
                   value={form.date}
                   onChange={(event) => setForm((current) => ({ ...current, date: event.target.value }))}
-                  className="rounded-2xl border border-white/12 bg-white/8 px-4 py-3 text-white outline-none focus:border-accent"
+                  className="rounded-xl border border-white/12 bg-white/8 px-3.5 py-2.5 text-white outline-none focus:border-accent"
                 />
               </label>
             </div>
 
-            <label className="grid gap-2 text-sm text-white/76">
+            <label className="grid gap-1.5 text-sm text-white/76">
               Trajeto ou destino
               <input
                 value={form.route}
                 onChange={(event) => setForm((current) => ({ ...current, route: event.target.value }))}
-                className="rounded-2xl border border-white/12 bg-white/8 px-4 py-3 text-white outline-none placeholder:text-white/34 focus:border-accent"
+                className="rounded-xl border border-white/12 bg-white/8 px-3.5 py-2.5 text-white outline-none placeholder:text-white/34 focus:border-accent"
                 placeholder="Ex.: São Paulo para Campinas"
               />
             </label>
 
-            <label className="grid gap-2 text-sm text-white/76">
+            <label className="grid gap-1.5 text-sm text-white/76">
               Mensagem
               <textarea
-                rows={6}
+                rows={4}
                 value={form.message}
                 onChange={(event) => setForm((current) => ({ ...current, message: event.target.value }))}
-                className="rounded-2xl border border-white/12 bg-white/8 px-4 py-3 text-white outline-none placeholder:text-white/34 focus:border-accent"
+                className="rounded-xl border border-white/12 bg-white/8 px-3.5 py-2.5 text-white outline-none placeholder:text-white/34 focus:border-accent"
                 placeholder="Conte o tipo de viagem, quantidade de passageiros e o contexto do atendimento."
               />
             </label>
 
             {error ? <p className="text-sm text-[#ffd4d4]">{error}</p> : null}
 
-            <button type="submit" className="inline-flex w-fit items-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-white transition hover:brightness-95">
+            <button type="submit" className="inline-flex w-fit items-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:brightness-95">
               Enviar para o WhatsApp
               <MessageCircle className="h-4 w-4" />
             </button>

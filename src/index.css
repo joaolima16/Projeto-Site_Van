@@ -58,7 +58,7 @@ textarea {
 }
 
 .page-shell {
-  width: min(1180px, calc(100% - 2rem));
+  width: min(1180px, calc(100% - 1.25rem));
   margin-inline: auto;
 }
 
@@ -86,6 +86,8 @@ textarea {
 
 .status-pill {
   display: inline-flex;
+  max-width: 100%;
+  line-height: 1.4;
   align-items: center;
   gap: 0.5rem;
   border-radius: 999px;
@@ -134,7 +136,7 @@ textarea {
 
 .vehicle-illustration {
   position: relative;
-  height: 20rem;
+  height: clamp(13.5rem, 62vw, 20rem);
   overflow: hidden;
   border-radius: 1.6rem;
   background:
@@ -254,7 +256,7 @@ textarea {
 .portrait-card {
   position: relative;
   margin-top: 1rem;
-  height: 22rem;
+  height: clamp(16rem, 75vw, 22rem);
   overflow: hidden;
   border-radius: 1.5rem;
   background:
@@ -393,6 +395,63 @@ textarea {
   transform: translateY(0);
 }
 
+@media (max-width: 640px) {
+  .surface-card {
+    border-radius: 1.35rem;
+  }
+
+  .feature-card {
+    border-radius: 1.45rem;
+  }
+
+  .glass-panel {
+    border-radius: 1rem;
+  }
+
+  .status-pill {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+  }
+
+  .hero-orb {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .vehicle-window,
+  .vehicle-window.second,
+  .vehicle-window.third {
+    top: 4.8rem;
+    width: 2.6rem;
+    height: 1.45rem;
+    border-radius: 0.5rem;
+  }
+
+  .vehicle-body {
+    bottom: 2.6rem;
+    height: 5.4rem;
+    border-radius: 1.55rem 1.8rem 1.25rem 1.25rem;
+  }
+
+  .vehicle-body::before {
+    top: -1.55rem;
+    height: 2.25rem;
+  }
+
+  .vehicle-light {
+    bottom: 4rem;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .vehicle-wheel {
+    bottom: 1.35rem;
+    width: 2.9rem;
+    height: 2.9rem;
+    box-shadow: inset 0 0 0 0.28rem #d5dee9;
+  }
+}
 @media (min-width: 768px) {
   .page-shell {
     width: min(1180px, calc(100% - 3rem));

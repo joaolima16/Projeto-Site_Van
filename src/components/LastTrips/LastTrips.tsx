@@ -31,7 +31,7 @@ export function LastImagesSection() {
               className="surface-card group h-full cursor-pointer overflow-hidden transition duration-500 hover:-translate-y-2 hover:shadow-[0_28px_70px_rgba(12,45,94,0.18)]"
               onClick={() => navigate(`/viagem/${trip.slug}`)}
             >
-              <div className="last-trip-placeholder relative min-h-72 overflow-hidden transition duration-500 group-hover:scale-[1.02]">
+              <div className="last-trip-placeholder relative min-h-56 overflow-hidden transition duration-500 group-hover:scale-[1.02] sm:min-h-72">
                 <img
                   src={pickBestSrc(trip.capa, 800)}
                   srcSet={buildSrcSet(trip.capa, [400, 800, 1600])}
@@ -52,7 +52,7 @@ export function LastImagesSection() {
                   <span className="text-ink/45">{trip.num || `0${index + 1}`}</span>
                 </div>
 
-                <h3 className="mt-4 font-serif text-3xl leading-tight text-ink transition duration-500 group-hover:text-primary">
+                <h3 className="mt-4 font-serif text-2xl leading-tight text-ink transition duration-500 group-hover:text-primary sm:text-3xl">
                   {trip.titulo}
                 </h3>
 

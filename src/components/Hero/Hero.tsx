@@ -15,7 +15,7 @@ export function Hero() {
         <SectionReveal className="space-y-8">
           <div className="space-y-6">
             <span className="status-pill">Atendimento executivo para viagens, eventos e excursões</span>
-            <h1 className="max-w-3xl font-heading text-5xl leading-[1.02] text-white sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-3xl font-heading text-4xl leading-[1.06] text-white sm:text-5xl lg:text-6xl xl:text-7xl">
               Viaje com conforto, segurança e presença profissional em cada trajeto.
             </h1>
             <p className="max-w-2xl text-base leading-8 text-white/74 md:text-lg">
@@ -53,9 +53,9 @@ export function Hero() {
         </SectionReveal>
 
         <SectionReveal className="relative">
-          <div className="feature-card overflow-hidden p-6 md:p-8">
-            <div className="rounded-[2rem] border border-white/12 bg-[linear-gradient(145deg,rgba(255,255,255,0.16),rgba(255,255,255,0.04))] p-6">
-              <div className="rounded-[1.8rem] border border-white/10 bg-[linear-gradient(180deg,rgba(168,200,232,0.18),rgba(12,45,94,0.12))] p-6">
+          <div className="feature-card overflow-hidden p-4 sm:p-6 md:p-8">
+            <div className="rounded-[1.4rem] border border-white/12 bg-[linear-gradient(145deg,rgba(255,255,255,0.16),rgba(255,255,255,0.04))] p-3 sm:rounded-[2rem] sm:p-6">
+              <div className="rounded-[1.2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(168,200,232,0.18),rgba(12,45,94,0.12))] p-3 sm:rounded-[1.8rem] sm:p-6">
                 <div className="vehicle-illustration">
                   <div className="vehicle-body" />
                   <div className="vehicle-window" />
@@ -69,15 +69,15 @@ export function Hero() {
               </div>
             </div>
 
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-[1.5rem] border border-white/10 bg-white/6 p-5">
+            <div className="mt-6 grid gap-4 sm:mt-8 sm:grid-cols-2">
+              <div className="rounded-[1.25rem] border border-white/10 bg-white/6 p-4 sm:rounded-[1.5rem] sm:p-5">
                 <p className="text-xs uppercase tracking-[0.28em] text-accent">Diferencial</p>
                 <p className="mt-3 font-serif text-2xl text-white">Atendimento humano</p>
                 <p className="mt-3 text-sm leading-7 text-white/70">
                   Comunicação direta, resposta rápida e acompanhamento antes, durante e depois da viagem.
                 </p>
               </div>
-              <div className="rounded-[1.5rem] border border-white/10 bg-white/6 p-5">
+              <div className="rounded-[1.25rem] border border-white/10 bg-white/6 p-4 sm:rounded-[1.5rem] sm:p-5">
                 <p className="text-xs uppercase tracking-[0.28em] text-accent">Cobertura</p>
                 <p className="mt-3 font-serif text-2xl text-white">Rotas sob demanda</p>
                 <p className="mt-3 text-sm leading-7 text-white/70">

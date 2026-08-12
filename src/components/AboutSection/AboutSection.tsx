@@ -72,16 +72,16 @@ export function AboutSection() {
     <section className="page-shell py-18 md:py-24">
       <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
         <SectionReveal>
-          <div className="surface-card relative overflow-hidden p-6 md:p-8">
+          <div className="surface-card relative overflow-hidden p-4 sm:p-6 md:p-8">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(200,168,75,0.3),_transparent_35%)]" />
-            <div className="relative rounded-[2rem] border border-primary/10 bg-[linear-gradient(150deg,rgba(12,45,94,0.05),rgba(168,200,232,0.4))] p-6">
-              <div className="rounded-[1.8rem] border border-white/55 bg-white/70 p-6 backdrop-blur">
+            <div className="relative rounded-[1.4rem] border border-primary/10 bg-[linear-gradient(150deg,rgba(12,45,94,0.05),rgba(168,200,232,0.4))] p-3 sm:rounded-[2rem] sm:p-6">
+              <div className="rounded-[1.2rem] border border-white/55 bg-white/70 p-3 backdrop-blur sm:rounded-[1.8rem] sm:p-6">
                 <div className="driver-portrait">
                   <div className="portrait-badge">motorista parceiro</div>
                   <div className="portrait-card">
                     <div className="portrait-head" />
                     {/* <div className="portrait-body" /> */}
-                    <img src={pictureVan} alt="Foto do motorista parceiro" className="absolute inset-0 h-full w-full object-cover object-[center_28%]portrait-body" />
+                    <img src={pictureVan} alt="Foto do motorista parceiro" className="absolute inset-0 h-full w-full object-cover object-[center_28%]" />
                     {/* <div className="portrait-vehicle" /> */}
                   </div>
                 </div>
@@ -106,7 +106,7 @@ export function AboutSection() {
             </p>
           </div>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
             {metrics.map((metric) => (
               <AnimatedMetric key={metric.label} {...metric} />
             ))}
