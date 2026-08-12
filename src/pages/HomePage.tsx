@@ -33,8 +33,8 @@ export function HomePage() {
   return (
     <>
       <Seo
-        title="Transporte Executivo | Viagens, transfers e fretamento com conforto"
-        description="Site institucional para divulgação de transporte executivo com foco em conforto, segurança, excursões, transfers e viagens fretadas."
+        title="Transporte Executivo em São Paulo | Transfers, viagens e fretamento"
+        description="Transporte executivo em São Paulo para excursões, transfers, eventos e fretamento de van com conforto, pontualidade e motorista profissional."
         url="https://maxtransportes.vercel.app"
         jsonLd={localBusiness}
       />
