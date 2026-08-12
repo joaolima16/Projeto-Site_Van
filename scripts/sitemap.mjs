@@ -1,7 +1,7 @@
 import { writeFile } from "fs/promises";
 import { join } from "path";
 
-const BASE_URL = "https://transporte-executivo.vercel.app";
+const BASE_URL = "https://maxtransportes.vercel.app";
 
 const staticRoutes = ["/", "/servicos", "/galeria", "/contato"];
 

@@ -18,7 +18,7 @@ export default function TravelGallery() {
       <Seo
         title="Galeria de Viagens | Transporte Executivo"
         description="Confira registros de excursões, transfers e viagens fretadas. Clique em uma viagem para ver fotos e detalhes completos."
-        url="https://transporte-executivo.vercel.app/galeria"
+        url="https://maxtransportes.vercel.app/galeria"
       />
       <GridView viagens={travels} onSelect={handleSelect} />
     </>

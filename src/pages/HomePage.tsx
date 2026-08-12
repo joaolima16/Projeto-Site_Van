@@ -13,8 +13,8 @@ const localBusiness = {
   "@type": "LocalBusiness",
   name: "Transporte Executivo",
   telephone: contato.telefone,
-  url: "https://transporte-executivo.vercel.app",
-  image: "https://transporte-executivo.vercel.app/og-image.jpg",
+  url: "https://maxtransportes.vercel.app",
+  image: "https://maxtransportes.vercel.app/og-image.jpg",
   address: {
     "@type": "PostalAddress",
     addressLocality: "São Paulo",
@@ -35,7 +35,7 @@ export function HomePage() {
       <Seo
         title="Transporte Executivo | Viagens, transfers e fretamento com conforto"
         description="Site institucional para divulgação de transporte executivo com foco em conforto, segurança, excursões, transfers e viagens fretadas."
-        url="https://transporte-executivo.vercel.app"
+        url="https://maxtransportes.vercel.app"
         jsonLd={localBusiness}
       />
       <Hero />

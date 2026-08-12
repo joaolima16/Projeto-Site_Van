@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://transporte-executivo.vercel.app/sitemap.xml
+Sitemap: https://maxtransportes.vercel.app/sitemap.xml
