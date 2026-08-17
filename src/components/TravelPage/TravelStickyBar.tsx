@@ -32,7 +32,7 @@ export function TravelStickyBar({ viagem }: { viagem: Travel }) {
         </div>
 
         <a
-          href={buildWhatsAppLink(whatsappMessage)}
+          href={buildWhatsAppLink(whatsappMessage, "travel_sticky_bar")}
           target="_blank"
           rel="noreferrer"
           className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-95"

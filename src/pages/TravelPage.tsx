@@ -32,7 +32,7 @@ export function TravelPage() {
   return (
     <>
       <Seo
-        title={`${viagem.titulo} | Transporte Executivo`}
+        title={`${viagem.titulo} | Max Transportes`}
         description={viagem.resumo}
         image={viagem.capa}
         url={`https://maxtransportes.vercel.app/viagem/${viagem.slug}`}

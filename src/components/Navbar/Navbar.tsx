@@ -40,7 +40,7 @@ export function Navbar() {
             <img src={logoVan} alt="Ãcone de van" className="rounded-full" />
           </span>
           <div>
-            <p className="font-serif text-xl text-white">{`Transporte Executivo`}</p>
+            <p className="font-serif text-xl text-white">{`Max Transportes`}</p>
             <p className="text-xs uppercase tracking-[0.28em] text-white/55">viagens e excursões</p>
           </div>
         </NavLink>
@@ -64,7 +64,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href={buildWhatsAppLink("Olá! Gostaria de solicitar um orçamento para transporte executivo.")}
+              href={buildWhatsAppLink("Olá! Gostaria de solicitar um orçamento com a Max Transportes.", "navbar_mobile")}
             target="_blank"
             rel="noreferrer"
             className="hidden items-center gap-2 rounded-full bg-whatsapp px-4 py-2.5 text-sm font-semibold text-white shadow-card transition hover:brightness-95 sm:inline-flex"
@@ -103,7 +103,7 @@ export function Navbar() {
               </NavLink>
             ))}
             <a
-              href={buildWhatsAppLink("Olá! Gostaria de solicitar um orçamento para transporte executivo.")}
+            href={buildWhatsAppLink("Olá! Gostaria de solicitar um orçamento com a Max Transportes.", "navbar_desktop")}
               target="_blank"
               rel="noreferrer"
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-2xl bg-whatsapp px-4 py-3 text-sm font-semibold text-white"

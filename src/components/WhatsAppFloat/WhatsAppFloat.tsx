@@ -4,7 +4,7 @@ import { buildWhatsAppLink } from "@/lib/whatsapp";
 export function WhatsAppFloat() {
   return (
     <a
-      href={buildWhatsAppLink("Olá! Vim pelo site e quero falar sobre uma viagem.")}
+      href={buildWhatsAppLink("Olá! Vim pelo site e quero falar sobre uma viagem.", "floating_button")}
       target="_blank"
       rel="noreferrer"
       aria-label="Abrir conversa no WhatsApp"

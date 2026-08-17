@@ -3,7 +3,7 @@ import type { Travel } from "@/components/TravelGallery";
 export const travels: Travel[] = [
   {
     id: 1,
-    slug: "Festa Eletrônica - Pirassurunga",
+    slug: "rave-pirassurunga",
     titulo: "Festa Eletrônica - Pirassurunga",
     categoria: "Passeio em Grupo",
     data: "27 de abril de 2026",
@@ -29,7 +29,7 @@ export const travels: Travel[] = [
   },
   {
     id: 2,
-    slug: "Congresso das bruxas e magos Paranapiacaba 2026",
+    slug: "congresso-paranapiacaba",
     titulo: "Congresso das bruxas e magos paranapiacaba 2026",
     categoria: "Executivo",
     data: "30 de maio de 2026",
@@ -153,4 +153,30 @@ export const travels: Travel[] = [
     corRingClass: "ring-[#993556]",
     num: "06",
   },
+  {
+    id: 7,
+    slug: "aparecida-do-norte",
+    titulo: "Aparecida do Norte - Apoio aos romeiros",
+    categoria: "Viagem Religiosa",
+    data: "20 de abril de 2026",
+    periodo: "20 Abr 2026",
+    local: "Aparecida do Norte, SP",
+    resumo: "Viagem religiosa a Aparecida do Norte com apoio aos romeiros.",
+    descricao:
+      "Viagem religiosa a Aparecida do Norte com apoio aos romeiros. O grupo foi recepcionado, acompanhei eles do inicio ao fim da viagem, apoiando todo o pessoal. ",
+    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/v1787002027/foto_3_xwxitn.jpg",
+    fotos: [
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1787002027/foto_2_vqkgah.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1787002027/foto_4_j6fi05.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1787002027/foto_5_ld2epw.jpg",
+    ],
+    tags: ["Ida e volta", "Festival", "Chocolate"],
+    cor: "#993556",
+    corLight: "#FBEAF0",
+    corClass: "bg-[#993556]",
+    corLightClass: "text-[#FBEAF0]",
+    corRingClass: "ring-[#993556]",
+    num: "07",
+  },
+  
 ];

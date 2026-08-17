@@ -62,7 +62,7 @@ export function ContactSection() {
       .filter(Boolean)
       .join("\n");
 
-    window.location.href = buildWhatsAppLink(message);
+    window.location.href = buildWhatsAppLink(message, "contact_form");
   };
 
   return (

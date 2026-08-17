@@ -5,7 +5,7 @@ export function ContactPage() {
   return (
     <>
       <Seo
-        title="Contato | Transporte Executivo"
+        title="Contato | Max Transportes"
         description="Solicite orçamento de transporte executivo, transfers ou viagens fretadas diretamente pelo WhatsApp."
         url="https://maxtransportes.vercel.app/contato"
       />

@@ -8,7 +8,7 @@ export function ServicesPage() {
   return (
     <>
       <Seo
-        title="Serviços | Transporte Executivo"
+        title="Serviços | Max Transportes"
         description="Conheça os formatos de atendimento: excursões em grupo, viagens fretadas e transfers executivos."
         url="https://maxtransportes.vercel.app/servicos"
       />
@@ -24,7 +24,7 @@ export function ServicesPage() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              href={buildWhatsAppLink("Olá! Quero entender qual serviço se encaixa melhor na minha viagem ou evento.")}
+              href={buildWhatsAppLink("Olá! Quero entender qual serviço se encaixa melhor na minha viagem ou evento.", "services_hero")}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-white transition hover:brightness-95"
@@ -59,7 +59,7 @@ export function ServicesPage() {
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
               <a
-                href={buildWhatsAppLink("Olá! Quero solicitar orçamento para transporte executivo.")}
+                href={buildWhatsAppLink("Olá! Quero solicitar orçamento com a Max Transportes.", "services_bottom")}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-primary-light"

@@ -12,6 +12,7 @@ const travelSlugs = [
   "museu-do-ipiranga",
   "casamento-mogi",
   "monte-siao",
+  "aparecida-do-norte",
 ];
 
 const travelRoutes = travelSlugs.map((slug) => `/viagem/${slug}`);

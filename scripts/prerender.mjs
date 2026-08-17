@@ -16,6 +16,7 @@ const routes = [
   "/viagem/museu-do-ipiranga",
   "/viagem/casamento-mogi",
   "/viagem/monte-siao",
+  "/viagem/aparecida-do-norte",
 ];
 
 const MIME = {

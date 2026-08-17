@@ -11,7 +11,7 @@ import { contato } from "@/data/contact";
 const localBusiness = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Transporte Executivo",
+  name: "Max Transportes",
   telephone: contato.telefone,
   url: "https://maxtransportes.vercel.app",
   image: "https://maxtransportes.vercel.app/og-image.jpg",
@@ -33,8 +33,8 @@ export function HomePage() {
   return (
     <>
       <Seo
-        title="Transporte Executivo em São Paulo | Transfers, viagens e fretamento"
-        description="Transporte executivo em São Paulo para excursões, transfers, eventos e fretamento de van com conforto, pontualidade e motorista profissional."
+        title="Max Transportes em São Paulo | Transfers, viagens e fretamento"
+        description="Max Transportes: transporte executivo em São Paulo para excursões, transfers, eventos e fretamento de van com conforto, pontualidade e motorista profissional."
         url="https://maxtransportes.vercel.app"
         jsonLd={localBusiness}
       />

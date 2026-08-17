@@ -1,5 +1,5 @@
 export const contato = {
-  nomeServico: "Transporte Executivo",
+  nomeServico: "Max Transportes",
   whatsapp: "+5511947034668",
   instagram: "@transporteexecutivo.oficial",
   telefone: "+ 55 11 94703-4668",

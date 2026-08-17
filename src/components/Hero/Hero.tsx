@@ -25,7 +25,7 @@ export function Hero() {
 
           <div className="flex flex-col gap-4 sm:flex-row">
             <a
-              href={buildWhatsAppLink("Olá! Quero falar sobre uma viagem com transporte executivo.")}
+              href={buildWhatsAppLink("Olá! Quero falar sobre uma viagem com a Max Transportes.", "hero")}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-white transition hover:brightness-95"

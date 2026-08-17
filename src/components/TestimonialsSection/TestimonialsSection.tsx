@@ -9,8 +9,8 @@ export function TestimonialsSection() {
       <SectionReveal>
         <SectionHeader
           eyebrow="Depoimentos"
-          title="Prova social construída em cima de confiança e recorrência."
-          description="Os depoimentos abaixo são textos estáticos de exemplo. A estrutura já está pronta para depois receber avaliações reais do Google, WhatsApp ou mensagens autorizadas pelos clientes."
+          title="O que nossos clientes dizem"
+          description="Experiências reais de quem já viajou com a gente. Cada avaliação é um compromisso que assumimos para a próxima viagem."
           align="center"
         />
       </SectionReveal>

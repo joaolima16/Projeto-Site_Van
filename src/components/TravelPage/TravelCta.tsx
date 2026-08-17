@@ -20,7 +20,7 @@ export function TravelCta({ viagem }: { viagem: Travel }) {
             Solicite um orçamento personalizado pelo WhatsApp. Respondemos rapidamente com todas as informações detalhadas.
           </p>
           <a
-            href={buildWhatsAppLink(whatsappMessage)}
+            href={buildWhatsAppLink(whatsappMessage, "travel_cta")}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-base font-semibold shadow-lg transition hover:brightness-95"

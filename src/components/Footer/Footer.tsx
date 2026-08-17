@@ -14,7 +14,7 @@ export function Footer() {
       <div className="page-shell grid gap-10 py-14 md:grid-cols-[1.3fr_0.8fr_0.9fr]">
         <div className="space-y-4">
           <span className="inline-flex items-center rounded-full border border-white/15 px-3 py-1 text-xs uppercase tracking-[0.3em] text-accent">
-            Transporte Executivo
+            Max Transportes
           </span>
           <div>
             <p className="font-serif text-3xl">Conforto, segurança e presença profissional em cada trajeto.</p>
