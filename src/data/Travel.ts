@@ -9,9 +9,9 @@ export const travels: Travel[] = [
     data: "27 de abril de 2026",
     periodo: "27 Abr 2026",
     local: "Pirassurunga, SP",
-    resumo: "Transporte de jovens para Rave localizada em Pirassurunga, SP, com embarque às Dia 23/06 às 16h e retorno  dia 24/06 às 20h",
+    resumo: "Transporte para festa eletrônica em Pirassurunga com embarque às 16h e retorno às 20h",
     descricao:
-      "Transporte de jovens para Rave localizada em Pirassurunga, SP, com embarque às Dia 23/06 às 16h e retorno  dia 24/06 às 20h. A operação envolveu logística precisa. O grupo foi recepcionado com amenities personalizados e chegou ao evento com 15 minutos de antecedência. Atendimento cinco estrelas do início ao fim.",
+      "Transporte de grupo para festa eletrônica em Pirassurunga, SP. A operação contou com embarque organizado às 16h e retorno às 20h do dia seguinte. A van climatizada garantiu conforto durante todo o trajeto de quase 200km, com motorista experiente e comunicação direta via WhatsApp para atualizações em tempo real.",
     capa: "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781268696/foto-1_gz1urg.jpg",
     fotos: [
       "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781268696/foto-1_gz1urg.jpg",
@@ -35,9 +35,9 @@ export const travels: Travel[] = [
     data: "30 de maio de 2026",
     periodo: "30 Mai 2026 - 31 Mai 2026",
     local:  "Paranapiacaba, SP",
-    resumo: "Congresso das bruxas e magos em Paranapiacaba, SP, com embarque dia 30/05 às 13h e retorno dia 31/05 às 18h",
+    resumo: "Congresso temático em Paranapiacaba com pernoite e transporte executivo",
     descricao:
-      "Transfer executivo para evento corporativo de alto padrão. A operação envolveu logística precisa com múltiplos pontos de embarque na Grande São Paulo, coordenação em tempo real via aplicativo e motoristas uniformizados. O grupo foi recepcionado com amenities personalizados e chegou ao evento com 15 minutos de antecedência. Atendimento cinco estrelas do início ao fim.",
+      "Transporte executivo para congresso temático em Paranapiacaba, evento com pernoite que reuniu entusiastas do universo místico. A operação envolveu embarque às 13h do dia 30/05 e retorno às 18h do dia seguinte. A van executiva ofereceu climatização, Wi-Fi a bordo e espaço adequado para o grupo, com motorista uniformizado e pontualidade garantida.",
     capa: "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781271449/foto-1_aufkug.jpg",
     fotos: [
       "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781271491/foto-2_tawpug.jpg",
@@ -61,7 +61,7 @@ export const travels: Travel[] = [
     local: "Pirassurunga, SP",
     resumo: "Vista panorâmica, trilhas guiadas e gastronomia local incomparável.",
     descricao:
-      "Excursão para Pirassurunga, uma cidade rica em história e natureza. O grupo visitou o Parque Estadual de Itatinga, fez trilhas pelas florestas e desfrutou de uma deliciosa refeição local. A hospedagem foi em pousada boutique com café da manhã colonial e atendimento personalizado.",
+      "Excursão de um dia para Pirassurunga, distrito histórico de Biritiba-Mirim. O grupo de 15 pessoas conheceu o Parque Estadual de Itatinga com trilhas guiadas pela Mata Atlântica, visitou a antiga usina hidrelétrica desativada e almoçou em restaurante local com pratos típicos da região. A van climatizada ofereceu conforto durante todo o percurso de 120km desde São Paulo.",
     capa: "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781273450/foto-7_xaqf8s.jpg",
     fotos: [
       "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781273738/foto-8_tszfzu.jpg",
@@ -87,7 +87,7 @@ export const travels: Travel[] = [
     local: "Ipiranga, SP",
     resumo: "Visita ao Museu do Ipiranga, passeio pelo Parque da Independência e almoço em restaurante tradicional.",
     descricao:
-      "Visita ao Museu do Ipiranga, passeio pelo Parque da Independência e almoço em restaurante tradicional.", 
+      "Excursão cultural ao Museu do Ipiranga para grupo de estudantes universitários. O passeio incluiu visita guiada às exposições permanentes sobre a Independência do Brasil, caminhada pelo Parque da Independência e almoço em restaurante tradicional do bairro. A van ofereceu espaço adequado para mochilas e equipamentos fotográficos, com motorista pontual e atencioso.", 
     capa: "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781275124/foto-1_mowlui.jpg",
     fotos: [
       "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1781275121/foto-3_sca87o.jpg",
@@ -110,9 +110,9 @@ export const travels: Travel[] = [
     data: "10 de fevereiro de 2026",
     periodo: "10-11 Fev 2026",
     local: "Mogi das Cruzes, SP",
-    resumo: "Transporte de convidados para casamento em Mogi das cruzes",
+    resumo: "Transporte de convidados para cerimônia de casamento em Mogi das Cruzes",
     descricao:
-      "Transporte de convidados para casamento em Mogi das Cruzes, SP. O grupo foi recepcionado com amenities personalizados e chegou ao evento com 15 minutos de antecedência. Atendimento cinco estrelas do início ao fim.",
+      "Transporte de convidados para casamento em sítio de eventos em Mogi das Cruzes. A operação atendeu 22 pessoas com múltiplos pontos de embarque na Zona Leste de São Paulo. A van executiva foi decorada com flores brancas conforme solicitado pela noiva, e o motorista coordenou os horários para garantir que todos chegassem juntos para a cerimônia. Retorno organizado após a festa.",
     capa: "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1783434883/foto-4_tsrokv.jpg",
     fotos: [
       "https://res.cloudinary.com/djwbhycl0/image/upload/q_auto:best/f_auto/v1783434883/foto-2_at6b8h.jpg",
@@ -138,7 +138,7 @@ export const travels: Travel[] = [
     local: "Monte Sião, MG",
     resumo: "Turismo gastronômico em Monte Sião, MG, com visita a chocolaterias artesanais e degustação de vinhos.",
     descricao:
-      "Turismo gastronômico em Monte Sião, MG, com visita a chocolaterias artesanais e degustação de vinhos. O grupo foi recepcionado com amenities personalizados e chegou ao evento com 15 minutos de antecedência. Atendimento cinco estrelas do início ao fim.",
+      "Viagem gastronômica para Monte Sião, MG, conhecida como a capital do chocolate artesanal. O grupo de 18 pessoas visitou três chocolaterias tradicionais, conheceu o processo de fabricação artesanal e participou de degustação de vinhos na vinícola local. A van climatizada ofereceu conforto durante os 600km de trajeto, com paradas estratégicas para descanso. Retorno no mesmo dia.",
     capa: "https://res.cloudinary.com/djwbhycl0/image/upload/v1783530542/monte-siao_fqy5i4.jpg",
     fotos: [
       "https://res.cloudinary.com/djwbhycl0/image/upload/v1783530246/foto-3_psp8d9.jpg",
@@ -158,19 +158,19 @@ export const travels: Travel[] = [
     slug: "aparecida-do-norte",
     titulo: "Aparecida do Norte - Apoio aos romeiros",
     categoria: "Viagem Religiosa",
-    data: "20 de abril de 2026",
-    periodo: "20 Abr 2026",
+    data: "12 de outubro de 2025",
+    periodo: "12 out 2025",
     local: "Aparecida do Norte, SP",
-    resumo: "Viagem religiosa a Aparecida do Norte com apoio aos romeiros.",
+    resumo: "Apoio logístico para grupo de romeiros em peregrinação a Aparecida do Norte",
     descricao:
-      "Viagem religiosa a Aparecida do Norte com apoio aos romeiros. O grupo foi recepcionado, acompanhei eles do inicio ao fim da viagem, apoiando todo o pessoal. ",
+      "Transporte de apoio para grupo de romeiros em peregrinação a Aparecida do Norte. A operação incluiu veículo de suporte com água, lanches e kit de primeiros socorros acompanhando os peregrinos durante todo o trajeto de 180km desde São Paulo. O motorista experiente coordenou paradas para descanso e refeições, garantindo segurança e conforto. Chegada à Basílica com tempo suficiente para a missa das 10h.",
     capa: "https://res.cloudinary.com/djwbhycl0/image/upload/v1787002027/foto_3_xwxitn.jpg",
     fotos: [
       "https://res.cloudinary.com/djwbhycl0/image/upload/v1787002027/foto_2_vqkgah.jpg",
       "https://res.cloudinary.com/djwbhycl0/image/upload/v1787002027/foto_4_j6fi05.jpg",
       "https://res.cloudinary.com/djwbhycl0/image/upload/v1787002027/foto_5_ld2epw.jpg",
     ],
-    tags: ["Ida e volta", "Festival", "Chocolate"],
+    tags: ["Ida e volta", "Religioso", "Peregrinação"],
     cor: "#993556",
     corLight: "#FBEAF0",
     corClass: "bg-[#993556]",
@@ -178,5 +178,30 @@ export const travels: Travel[] = [
     corRingClass: "ring-[#993556]",
     num: "07",
   },
-  
+  {
+    id: 8,
+    slug: "casamento-mairipora",
+    titulo: "Casamento Mairiporã",
+    categoria: "Transporte de convidados",
+    data: "10 de maio de 2026",
+    periodo: "10 Mai 2026",
+    local: "Mairiporã, SP",
+    resumo: "Transporte de convidados para cerimônia de casamento em Mairiporã, SP, com embarque em múltiplos pontos da cidade de São Paulo.",
+    descricao:
+      "Transporte de convidados para casamento em sítio de eventos em Mairiporã, SP. A operação atendeu 20 pessoas com múltiplos pontos de embarque na cidade de São Paulo. A van executiva foi decorada com flores brancas conforme solicitado pelos noivos, e o motorista coordenou os horários para garantir que todos chegassem juntos para a cerimônia. Retorno organizado após a festa.",
+    capa: "https://res.cloudinary.com/djwbhycl0/image/upload/v1787009111/foto_1_glgxjg.jpg",
+    fotos: [
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1787009111/foto_2_fcosom.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1787009111/foto_4_c28oeo.jpg",
+      "https://res.cloudinary.com/djwbhycl0/image/upload/v1787009111/foto_3_qjcjqj.jpg",
+    ],
+    tags: ["Ida e volta", "Casamento", "Transporte de convidados"],
+    cor: "#993556",
+    corLight: "#FBEAF0",
+    corClass: "bg-[#993556]",
+    corLightClass: "text-[#FBEAF0]",
+    corRingClass: "ring-[#993556]",
+    num: "07",
+  },
+   
 ];
